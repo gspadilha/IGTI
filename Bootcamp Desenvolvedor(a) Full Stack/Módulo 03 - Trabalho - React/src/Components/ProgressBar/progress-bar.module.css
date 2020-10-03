@@ -1,0 +1,26 @@
+.defaultPrincipal {
+    width: 100%;
+    border-radius: 5px;
+    ;
+}
+
+.default {
+    display: inline-block;
+    height: 30px;
+}
+
+.default {
+    background-color: var(--color-first-element);
+}
+
+.default:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--color-second-element);
+}
+
+.default:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--color-third-element);
+}

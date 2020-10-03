@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid gray;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+    margin: 2px 4px;
+}
+
+.card > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100%;
+    flex: 1;
+}
+
+.card > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 3;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}

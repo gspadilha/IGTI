@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trabalho Prático 01</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+
+    <body>
+        <div id="div_controles">
+            <div>
+                (R) Vermelho:<br />
+                (G) Verde:<br />
+                (B) Blue:<br />
+            </div>
+            <div>
+                <input type="range" min="0" max="255" id="redRange" name="redRange" class="range" /><br />
+                <input type="range" min="0" max="255" id="greenRange" name="greenRange" class="range" /><br />
+                <input type="range" min="0" max="255" id="blueRange" name="blueRange" class="range" /><br />
+            </div>
+            <div>
+                <input type="text" readonly id="redInput" name="redInput" /><br />
+                <input type="text" readonly id="greenInput" name="greenInput" /><br />
+                <input type="text" readonly id="blueInput" name="blueInput" /><br />
+            </div>
+        </div>
+
+        <div id="div_caixa"></div>
+    </body>
+    <script src="js/index.js"></script>
+</html>

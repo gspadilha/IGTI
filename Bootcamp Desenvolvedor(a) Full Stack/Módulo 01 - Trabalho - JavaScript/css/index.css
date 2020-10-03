@@ -1,0 +1,43 @@
+html, body {
+    box-sizing: border-box;
+}
+
+#div_controles {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto 20% auto;
+    padding: 25px;
+    justify-items: center;
+}
+
+@media(min-width:768px) {
+    #div_controles {
+        width: 75%;
+    }
+}
+
+@media(min-width:1200px) {
+    #div_controles {
+        width: 50%;
+    }
+}
+
+input[type='range'] {
+    width: 255px;
+}
+
+input[type='text'] {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    text-align: right;
+    width: 50px;
+}
+
+#div_caixa {
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+}
