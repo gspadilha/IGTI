@@ -1,0 +1,22 @@
+<p id="titulo">{{ titulo }}</p>
+<div id="galeria">
+  <img src="foto" id="{{ id }}" />
+
+  <label>Foto {{ id + 1 }} de {{ fotos.length }}</label>
+
+  <div id="botoes">
+    <button (click)="setValue(0)" [disabled]="id === 0">Primeira Foto</button>
+    <button (click)="setValue(id - 1)" [disabled]="id === 0">
+      Foto Anterior
+    </button>
+    <button (click)="setValue(id + 1)" [disabled]="id === fotos.length - 1">
+      Foto Posterior
+    </button>
+    <button
+      (click)="setValue(fotos.length - 1)"
+      [disabled]="id === fotos.length - 1"
+    >
+      Última Foto
+    </button>
+  </div>
+</div>
